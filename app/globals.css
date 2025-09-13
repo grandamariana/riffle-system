@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --papayoo-orange: #ff8c00;
+  --papayoo-yellow: #ffd700;
+  --papayoo-black: #1a1a1a;
+  --papayoo-white: #ffffff;
+  --font-lato: "Lato";
+  --font-inter: "Inter";
+  --font-montserrat: "Montserrat";
+}
+
+body {
+  font-family: var(--font-lato), var(--font-inter), sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-montserrat), var(--font-inter), sans-serif;
+}
+
+.papayoo-gradient {
+  background: linear-gradient(135deg, var(--papayoo-orange) 0%, var(--papayoo-yellow) 100%);
+}
+
+.papayoo-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+.papayoo-button {
+  background: linear-gradient(135deg, var(--papayoo-orange) 0%, var(--papayoo-yellow) 100%);
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.papayoo-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 140, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .papayoo-card {
+    margin: 16px;
+    border-radius: 12px;
+  }
+}
